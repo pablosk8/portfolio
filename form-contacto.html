@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Open+Sans:ital,wght@0,300;0,700;1,600&family=Roboto:ital,wght@0,300;0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="form-contacto-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-contacto</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>Pablo Facio</span>
+            <ul class="menu" id="menu">
+                <li><a href="./index.html">Bienvenido</a></li>
+                <li><a href="./index.html#conocimiento">Conocimientos</a></li>
+                <li><a href="./index.html#proyectos">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="sub-contacto">
+        <h2>Contacto</h2>
+        <div class="form">
+            <form action="register">
+                <div class="fila">
+                    <div class="columna">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Escribe aquí tu nombre" required>
+                    </div>
+                    <div class="columna">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" placeholder="Escribe aquí tu apellido" required>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columna">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" placeholder="Escribe aquí tu e-mail" required>
+                    </div>
+                    <div class="columna">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" placeholder="Escribe aquí tu teléfono" required>
+                    </div>
+                </div>
+                <div class="columna-text">
+                    <label for="contacto">Detalle del contacto</label>
+                    <textarea name="contacto" cols="30" rows="5" placeholder="Dejame tu mensaje y me pongo en contacto pronto."
+                        required></textarea>
+                </div>
+                <div>
+                    <input id="btn" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.wa.link/b5p2b7" target="_blank"><i
+                            class="fa-brands fa-whatsapp"></i><span>Whatsapp</span></a></li>
+                <li><a href="mailto:pablo@gmail.com"><i class="fa-regular fa-envelope"></i><span>Gmail</span></a></li>
+                <li><a href="https://www.linkedin.com/in/pablo-facio-706a01160/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i><span>Linkedin</span></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

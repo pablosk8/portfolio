@@ -49,7 +49,8 @@ nav ul li a {
     border-radius: 5px;
     text-transform: uppercase;
 }
-nav span{
+
+nav span {
     font-family: 'Rubik 80s Fade', cursive;
     color: white;
     text-transform: uppercase;
@@ -58,6 +59,7 @@ nav span{
     line-height: 80px;
     margin-left: 40px;
 }
+
 li a:hover,
 li a.active {
     background: none;
@@ -87,13 +89,14 @@ li a.active {
 }
 
 .sub-hola {
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
     max-width: 400px;
     padding: 15px;
+    /* border: 2px solid red; */
 }
 
 .sub-hola p {
@@ -163,13 +166,16 @@ li a.active {
 .sub-proyecto img {
     width: 170px;
 }
-.sub-proyecto img:hover{
+
+.sub-proyecto img:hover {
     scale: 1.05;
 }
-.sub-proyecto:hover{
-    background: linear-gradient( white, rgb(240, 7, 7)) padding-box,
+
+.sub-proyecto:hover {
+    background: linear-gradient(white, rgb(240, 7, 7)) padding-box,
         linear-gradient(to bottom, rgb(165, 54, 7), white) border-box;
 }
+
 .sub-proyecto {
     background: linear-gradient(rgb(240, 7, 7), white) padding-box,
         linear-gradient(to bottom, rgb(250, 250, 248), rgb(165, 54, 7)) border-box;
@@ -221,8 +227,6 @@ li a.active {
     min-width: 200px;
 }
 
-
-
 .sub-contacto {
     padding: 15px;
     text-align: center;
@@ -234,16 +238,28 @@ li a.active {
 }
 
 .sub-contacto ul {
+    padding: 10px;
     font-size: 30px;
     margin: auto;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: left;
+    /* border: 2px solid red; */
 }
-.sub-contacto ul li a i{
+
+.sub-contacto ul li a i {
+    display: block;
     padding: 10px;
+}
+
+.sub-contacto ul li a span {
+    display: none;
+}
+
+.sub-contacto a button {
+    display: none;
 }
 
 /* INICIO FOOTER */
@@ -259,13 +275,12 @@ footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 footer ul li a {
     font-size: 30px;
     padding: 10px;
-    text-decoration: none;
 }
 
 footer p {
@@ -274,11 +289,66 @@ footer p {
 
 .div1,
 .div2 {
-    height: 40%;
+    height: 35%;
 }
 
 .div3 {
-    height: 20%;
+    font-size: 25px;
+    height: 30%;
+}
+
+/* AGREGADO DE FORMULARIO */
+.contacto h2 {
+    padding: 10px;
+}
+
+.form {
+    width: 80%;
+    margin: auto;
+}
+
+.columna,
+.columna-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.columna-text {
+    width: 100%;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input,
+textarea,
+button {
+    color: beige;
+    background-color: rgb(99, 4, 4);
+    border: 2px solid rgb(36, 11, 11);
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+input#btn,
+button {
+    width: 150px;
+    padding: 3px;
+    margin-top: 2px;
+    color: gray;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input#btn:hover,
+button:hover {
+    background-color: coral;
+    color: black;
 }
 
 @media (max-width:760px) {
@@ -317,6 +387,20 @@ footer p {
 }
 
 @media (max-width:480px) {
+    nav span, h2{
+        font-size: 22px;
+    }
+    .hola p{
+        font-size: 15px;
+    }
+    
+    form {
+        display: none;
+    }
+
+    .sub-contacto a button {
+        display: block;
+    }
 
     .checkbtn {
         display: block;
@@ -328,7 +412,7 @@ footer p {
     }
 
     nav ul {
-        float:left;
+        float: left;
         width: 50%;
         height: 350px;
         margin-right: 0px;
@@ -361,7 +445,6 @@ footer p {
 
 
     .hola {
-
         flex-direction: column-reverse;
         align-items: center;
         margin-top: 80px;
@@ -375,10 +458,13 @@ footer p {
     .sub-hola img {
         width: 90%;
     }
+    .conocimientos{
+        margin-top: 60px;
+    }
 
     .conocimientos article {
         padding: 5px;
-        padding-top: 50px;
+        padding-top: 20px;
         flex-direction: row;
         justify-items: center;
         align-items: center;
@@ -387,6 +473,9 @@ footer p {
 
     .sub-conocimiento {
         min-height: 350px;
+    }
+    .proyectos h2{
+        margin-top: 350px;
     }
 
     .sub-proyecto {
@@ -399,16 +488,28 @@ footer p {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 680px;
     }
-
+    .contacto p{
+        margin-top: 25px;
+    }
     .sub-contacto div ul {
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+    }
+    button{
+        margin: auto;
+        padding: 20px;
     }
 
     .footer {
+        
         flex-wrap: wrap;
+    }
+    footer ul li a {
+        font-size: 15px;
+        padding: 10px;
     }
 }

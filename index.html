@@ -157,11 +157,43 @@
             </div>
             <div class="sub-contacto">
                 <h2>Contacto</h2>
+                <div class="form">
+                    <form action="register">
+                        <div class="fila">
+                            <div class="columna">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" placeholder="Escribe aquí tu nombre" required>
+                            </div>
+                            <div class="columna">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" name="apellido" placeholder="Escribe aquí tu apellido" required>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="columna">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" placeholder="Escribe aquí tu e-mail" required>
+                            </div>
+                            <div class="columna">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" name="telefono" placeholder="Escribe aquí tu teléfono" required>
+                            </div>
+                        </div>
+                        <div class="columna-text">
+                            <label for="contacto">Detalle del contacto</label>
+                            <textarea name="contacto" cols="30" rows="5" placeholder="Dejame tu mensaje y me pongo en contacto pronto." required></textarea>
+                        </div>
+                        <div>
+                            <input id="btn" type="submit" value="Enviar mensaje">
+                        </div>   
+                    </form>
+                </div>
                 <div>
+                    <a href="./form-contacto.html"><button>Contactame</button></a>
                     <ul>
-                        <li><a href="https://www.wa.link/b5p2b7" target="_blank"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
-                        <li><a href="mailto:pablo@gmail.com"><i class="fa-regular fa-envelope"></i>Gmail</a></li>
-                        <li><a href="https://www.linkedin.com/in/pablo-facio-706a01160/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+                        <li><a href="https://www.wa.link/b5p2b7" target="_blank"><i class="fa-brands fa-whatsapp"></i><span>Whatsapp</span></a></li>
+                        <li><a href="mailto:pablo@gmail.com"><i class="fa-regular fa-envelope"></i><span>Gmail</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/pablo-facio-706a01160/" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a></li>
                     </ul>
                 </div>
             </div>
